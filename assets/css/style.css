@@ -1,5 +1,7 @@
-body {
+#full-container {
+    height: 100vh;
     background-color: black !important;
+    padding: 0;
 }
 
 #app-title {
@@ -28,6 +30,10 @@ body {
 
 #current-card {
     border-radius: 1rem !important;
+}
+
+#current-header {
+    padding: 0;
 }
 
 #current-img {
