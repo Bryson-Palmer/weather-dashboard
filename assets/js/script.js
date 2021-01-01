@@ -121,9 +121,8 @@ function buildCurrentBody(res) {
     currentBodyDiv.addClass("container-fluid body-box");
 
     // Convert temp
-    let temperature = res.main.temp;
-    buildTemp(temperature);
-    currentBodyDiv.append(temperature);
+    let temp = buildTemp(res.main.temp);
+    currentBodyDiv.append(temp);
     
     // Creating element for the humidity
     // Appending to the div
@@ -196,9 +195,8 @@ function renderFiveDay (res) {
         fiveDayCard.append(icon);
 
         // Convert temp
-        let temperature = res.daily[i].temp.day;
-        buildTemp(temperature);
-        fiveDayCard.append(temperature);
+        let temp = buildTemp(res.daily[i].temp.day);
+        fiveDayCard.append(temp);
     
         // Creating element for the humidity
         // Appending to the div
@@ -212,7 +210,7 @@ function renderFiveDay (res) {
 
 // Converting unix timestamp of new date to x/xx/xxxx
 function buildDate(newDate) {
-    let date = new Date(newDate*1000);
+    const date = new Date(newDate*1000);
     let [month, day, year] = date.toLocaleDateString("en-US").split("/");
     year -= 2000;
     convertDate = month + "/" + day + "/" + year;
@@ -221,23 +219,24 @@ function buildDate(newDate) {
 
 // Create an element for the date
 function renderDate(convertDate) {
-    let date = $("<h3>").text(convertDate);
+    const date = $("<h3>").text(convertDate);
     date.addClass("text-white mb-3"); 
     return date;
 }
 
 // Create an image element for the icon, build the source url, and set the attribute
 function renderIcon(newIcon) {
-    let icon = $('<img class="p-0" id="weather-icon" alt="Weather icon" width="150" height="150">');
-    let iconUrl = "http://openweathermap.org/img/wn/" + newIcon + "@2x.png";
+    const icon = $('<img class="p-0" id="weather-icon" alt="Weather icon" width="150" height="150">');
+    const iconUrl = "http://openweathermap.org/img/wn/" + newIcon + "@2x.png";
     icon.attr("src", iconUrl);
     console.log(newIcon);
     return icon;
 }
 
+// Create an element for the temp
 function buildTemp(temp) {
     const tempF = ((temp - 273.15) * 1.80 + 32).toFixed();
-    let temperature = $("<p>").text("Temperature: " + tempF + "°F");
+    const temperature = $("<p>").text("Temperature: " + tempF + "°F");
     return temperature;
 }
 
