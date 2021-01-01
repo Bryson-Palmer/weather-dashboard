@@ -1,6 +1,13 @@
-#full-container {
-    height: 100vh;
+body {
+    height: 100%;
     background-color: black !important;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#full-container {
     padding: 0;
 }
 
@@ -32,14 +39,50 @@
     border-radius: 1rem !important;
 }
 
-#current-header {
+#current-weather {
     padding: 0;
+}
+
+.header-box {
+    height: 40%;
+}
+
+.body-box {
+    margin-top: -0.5rem;
+}
+
+.uvi-container {
+    display: inline;
+}
+
+.uviLow {
+    background-color: rgba(3, 250, 3, 0.5);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.uviModerate {
+    background-color: rgba(255, 255, 0, 0.5);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.uviHigh {
+    background-color: rgba(255, 166, 0, 0.5);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.uviVeryHigh {
+    background-color :rgba(255, 0, 0, 0.5);
+    border-radius: 1rem;
+    margin: 1rem;
 }
 
 #current-img {
     border-radius: 1rem;
 }
 
-#five-day {
-    border-radius: 1rem;
+.five-day {
+    border-radius: 1rem !important;
 }
