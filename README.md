@@ -13,7 +13,7 @@
     </a>
 </p>
 
-  Weather Bug is a simple weather application that gives you the current weather of any city submitted in the search bar.
+  Weather Bug is a simple weather application that gives you the current weather of any city submitted in the search bar. </br>
 Current weather data includes:
 * City Name
 * Date
@@ -35,7 +35,7 @@ This app uses the `OpenWeather API` to retrieve weather data for cities. It also
 
   ## Table of Contents
   [Links](#links) </br>
-  [Screenshot](#screenshot) </br>
+  [Video Demo](#video-demo) </br>
   [Installation](#installation) </br>
   [Usage](#usage) </br>
   [Future Development](#future-development) </br>
@@ -48,10 +48,11 @@ This app uses the `OpenWeather API` to retrieve weather data for cities. It also
 
 <p>
   <img src="https://img.shields.io/badge/Javascript-yellow" />
+  <img src="https://img.shields.io/badge/jQuery-yellow" />
   <img src="https://img.shields.io/badge/HTML-orange" />
+  <img src="https://img.shields.io/badge/CSS-informational" />
   <img src="https://img.shields.io/badge/Boostrap-informational" />
-  <img src="https://img.shields.io/badge/-node.js-9cf" />
-  <img src="https://img.shields.io/badge/-inquirer-greenBright" >
+  <img src="https://img.shields.io/badge/-OpenWeather API-greenBright" >
 </p>
 
   ## 🔗 <a id='links'></a> Links
@@ -59,19 +60,20 @@ This app uses the `OpenWeather API` to retrieve weather data for cities. It also
   [**Weather Bug (Weather Dashboard)**](https://bryson-palmer.github.io/weather-dashboard/) </br>
   
 
-  ## 📸 <a id='screenshot'></a> Screenshot
-  ![screenshot](./assets/img/Weather-Bug.gif) </br>
+  ## 📸 <a id='video-demo'></a> Video Demo
+  ![video-demo](./assets/img/Weather-Bug.gif) </br>
+  [**Link to video demo**](https://drive.google.com/file/d/1wvr9UMAzLzlPMlnLYI3GsLe6t2y3-RK7/preview) </br>
 
   ## 🔧 <a id='installation'></a> Installation Instructions
-  Simply load this url (https://bryson-palmer.github.io/weather-dashboard/) into any browser and start using the application.
+  Simply click or load this url (https://bryson-palmer.github.io/weather-dashboard/) into any browser and start using the application.
 
 
   ## 💼  <a id='usage'></a> Usage Information
-  Type in a city name (accurately or you'll get an error) into the search field, press the search button, and watch your request load. After you've searched some cities previously, you can press the drop down menu and pick one of those as options. By default, before you've searched any cities upon first use, the app loads the data for Rio De Janeiro. On desktop, both the current weather card and the 5-day forecast card at 100%. If you are viewing on a table or phone, the 5-day forecast becomes a srollable window from side to side.
+  Type in a city name (accurately or you'll get an error) into the search field, press the search button, and watch your request load. After you've searched some cities previously, you can press the drop down menu and pick one of those as options. By default, before you've searched any cities upon first use, the app loads the data for Rio De Janeiro. On desktop, both the current weather card and the 5-day forecast card are at 100%. If you are viewing on a table or phone, the 5-day forecast becomes a srollable window from side to side.
 
 
   ## 🔍 <a id='future-development'></a> Future Development
-  This app is at a good MVP (Minimum Viable Product) state. It functions as requested and expected. The design isn't as sharp as it could be but it's a very good version 1.0. The javascript code could be simplified in many places. For example, it's all in one script file at the moment. I did seperate out a lot of the actions into their own respective functions but I could take it a step further and create classes, store them into their own files, export them, and import them into the index file. This will be an app I want to come back to take it to the next version. 
+  This app is at a good MVP (Minimum Viable Product) state. It functions as requested and expected. The design isn't as sharp as it could be but it's a very good version 1.0. The javascript code could be simplified in many places. For example, it's all in one script file at the moment. I did seperate out a lot of the actions into their own respective functions but I could take it a step further and create classes, store them into their own files, export them, and import them into the index file. This will be an app I want to come back to and take it to the next version. 
 
 
   ## 🏛️ <a id='contributing'></a> Contribution Guidelines
@@ -79,11 +81,11 @@ This app uses the `OpenWeather API` to retrieve weather data for cities. It also
 * Clone this repo onto your own local machine.
 * Make any additions or modifications you feel need to be made.
 * Make a pull request to be reviewed and approved by me.
-* Wait for message back about your work and then we'll go from their.
+* Wait for a message back about your work and then we'll go from their.
 
 
-  ## ✅ <a id='tests'></a> Test Instructions
-  Currently theer are no tests with this project. If you are contributing to this project, make sure your new code executes as expected and doesn't break the existing code behavior.
+## ✅ <a id='tests'></a> Test Instructions
+  Currently there are no tests with this project. If you are contributing to this project, make sure your new code executes as expected and doesn't break the existing code behavior.
 
 
   ## 🏆 <a id='license'></a> License
