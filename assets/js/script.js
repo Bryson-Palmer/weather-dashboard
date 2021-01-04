@@ -140,13 +140,13 @@ function buildCurrentHeader (res) {
     // Creating header div for the current weather card
     // Adding class
     let currentHeaderDiv = $("<div>");
-    currentHeaderDiv.addClass("container-fluid d-flex flex-wrap justify-content-start header-box p-0");
+    currentHeaderDiv.addClass("container-fluid d-flex flex-wrap justify-content-start header-box ");
 
     // Creating element for the city name
     // Adding class
     // Appending to the div
     let city = $("<h2>").text(res.name);
-    city.addClass("pl-3 mr-4");
+    city.addClass("city-name mr-5");
     currentHeaderDiv.append(city); 
 
     // Convert unix time to date
@@ -244,7 +244,7 @@ function renderFiveDay (res) {
 
         // Create div to hold five day header and body elements
         let fiveDayCard = $("<div>");
-        fiveDayCard.addClass("five-day d-flex flex-column text-white bg-dark col-11 m-3 pt-3 pb-3");
+        fiveDayCard.addClass("five-day text-white bg-dark p-3");
         
         // Build the date for each day
         let date = buildDate(res.daily[i].dt);
@@ -290,7 +290,7 @@ function renderDate(convertDate) {
 
 // Create an image element for the icon, build the source url, and set the attribute
 function renderIcon(newIcon) {
-    const icon = $('<img class="" alt="Weather icon" width="150" height="150">');
+    const icon = $('<img class="" id="weather-icon" alt="Weather icon" width="150" height="150">');
     const iconUrl = "http://openweathermap.org/img/wn/" + newIcon + "@2x.png";
     icon.attr("src", iconUrl);
     return icon;
@@ -299,7 +299,7 @@ function renderIcon(newIcon) {
 // Create an element for the temp
 function buildTemp(temp) {
     const tempF = ((temp - 273.15) * 1.80 + 32).toFixed(1);
-    const temperature = $("<p>").text("Temperature: " + tempF + " °F");
+    const temperature = $("<p>").text("Temp: " + tempF + " °F");
     return temperature;
 }
 
