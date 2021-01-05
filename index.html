@@ -31,10 +31,10 @@
         </header>
 
         <!-- Navigation bar -->
-        <nav class="d-flex justify-content-center" id="side-nav">
+        <nav class="d-flex justify-content-center col-12" id="side-nav">
             <div class="btn-group">
                 <!-- Drop down button -->
-                <button class="btn btn-secondary btn-sm mt-2 ml-1 mb-3" id="drop-down" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-secondary col-1 btn-sm mt-2 ml-1 mb-3" id="drop-down" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" id="drop-down-img" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
@@ -47,18 +47,18 @@
 
             <form class="form-inline">
                 <!-- Search button -->
-                <button type="submit" class="" id="search-btn">
+                <button type="submit" class="col-1" id="search-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-search mb-1" id="search-btn-img" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                     </svg>
                 </button>
 
                 <!-- City search field -->
-                <input type="text" class="mt-0 ml-1" id="city-name" placeholder="Enter City">
+                <input type="text" class="col-6 mt-0 ml-1" id="city-name" placeholder="Enter City">
             </form>
 
             <!-- Fake notifications and settings icons -->
-            <div class="mt-3 mr-3 ml-1" id="fake-systems">
+            <div class="col-4 mt-3 mr-3 ml-1" id="fake-systems">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bell-fill" id="bell-icon" viewBox="0 0 16 16">
                     <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
                 </svg>
@@ -79,7 +79,7 @@
 
             <!-- Label for the five day forecast -->
             <h2 class="text-white mt-5" id="five-day-label">5-Day Forecast</h2>
-            <p class="muted" id="scroll-label">( <- Scroll -> )</p>
+            <p class="muted" id="scroll-label">( < Scroll > )</p>
           
 
             <!-- 5-Day forecast -->
